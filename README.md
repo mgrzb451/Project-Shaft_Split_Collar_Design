@@ -47,7 +47,31 @@ We can observe the complex interactions between the RBE2 rigid elements and the 
 ### Stress results
 <img width="1499" height="820" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/stress0.jpg" />
 
-# Optimized Design
+# Parts Optimization
 Looking at the results it's clear that it can be made much better. Let's optimize it (this is gonna be fun!).
-We will design a collar, manufactured by Die Forging. The geometry will be optimized in terms of conformity to the manufacturing process requirements and we'll try to minimize the weight of the clamp
+We will design a collar, manufactured by Die Forging. The geometry will be optimized in terms of conformity to the manufacturing process requirements and we'll try to minimize the weight of the clamp.
 
+## 3D Design
+Collar components were designed according to best die forging process practices. Draft angles, generous radii, wall thickness and part thickness uniformity were optimized and subsequently validated through various tools available in NX ♥
+
+<img width="972" height="396" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged_process_valid.jpg" />
+
+The parts will be forged first and then CNC machined. I think this manufacturing process makes sense given the likely mass production character of the parts.
+
+<img width="1087" height="746" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged3d_0.jpg" />
+<img width="450" height="457" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged3d_1.jpg" />
+
+A **reduction in total mass of ~35%** was achieved!
+
+## FEA Analysis
+An FEA akin to the initial one was performed. The geometry was simplified according to recommendation from FEA textbooks (also my PC is let's say...vintage 😥)
+
+<img width="894" height="576" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged_fea0.jpg" />
+<img width="745" height="586" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged_fea1.jpg" />
+<img width="689" height="570" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged_fea2.jpg" />
+
+## Results
+The results indicate similar strength despite the significant mass reduction!
+
+<img width="684" height="766" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged_displacement.jpg" />
+<img width="1499" height="820" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/forged_displacements.gif" />
