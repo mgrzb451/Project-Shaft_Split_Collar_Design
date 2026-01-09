@@ -1,7 +1,8 @@
 # Shaft Split-Collar Design with NX and Simceneter Nastran
 Let's design a 2 piece split-collar shaft clamp based on some input parameters to practice performing **Nonlinear Analysis** in Simcenter Nastran.
 
-<img width="242" height="189" alt="image" src="https://github.com/user-attachments/assets/60c856c7-ac17-4c30-ad3e-7a4b04786d34" /> <img width="324" height="321" alt="image" src="https://github.com/user-attachments/assets/f6bfb7a1-2cc0-4591-b1a7-e16ddffffc84" />
+<img width="242" height="189" alt="image" src="https://github.com/user-attachments/assets/60c856c7-ac17-4c30-ad3e-7a4b04786d34" />
+<img width="324" height="321" alt="image" src="https://github.com/user-attachments/assets/f6bfb7a1-2cc0-4591-b1a7-e16ddffffc84" />
 
 Design inputs:
 - shaft OD = 20mm  
@@ -14,6 +15,7 @@ We select materials for the bolts and collar halves and manually calculate the r
 
 # 3D Design
 Using the manual calculations as a basis for the design process in NX we create a geometry optimized for minimum weight, size and robustness. The design process is iterative and guided by simplified FEA
+
 <img width="401" height="442" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/3d.jpg" />
 <img width="610" height="742" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/prelim_fea.jpg" />
 
@@ -24,11 +26,14 @@ Perfect usecase for FEA!
 
 ## Preload Application testing
 Before we perform the actual analysis we'll test several ways of applying preload to bolts in Simcenter and choose the one that gives the best results for our case
+
 <img width="1499" height="820" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/preloads0.gif" />
+
 Out of the cases tested, using **1D Beam** elements with an **RBE2 spider** connection yielded results that most resemble the situation I'd expect from real-world parts
 
 ## Analysis Setup
 The analysis will be performed using a Nonlinear Solution. First the bolts will be tightened to the calculated preload value and then the axial load will be applied to verify whether the collar can successfully resist the force
+
 <img width="959" height="579" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/fea_setup0.jpg" />
 <img width="851" height="593" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/fea_setup1.jpg" />
 <img width="746" height="509" alt="image" src="https://github.com/mgrzb451/Project-Shaft_Split_Collar_Design/blob/main/assets/fea_setup2.jpg" />
